@@ -1,6 +1,7 @@
 body {
-  background: #08010c;
-  height: 1000px;
+  background: url(Web\ 1920\ –\ 1.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 * {
@@ -11,21 +12,25 @@ img {
   width: 20px;
 }
 input {
-  flex: 1;
   border-radius: 5px;
   outline: none;
   background: transparent;
   padding: 5px;
   font-weight: 16px;
-  margin: 10px;
+}
+#input-box {
+  width: 75%;
+  display: flex;
+  align-items: center;
 }
 .todo {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
-}
-.in {
+  height: auto;
+  
+
+.btn {
   border: none;
   background-color: #ff5946;
   color: #fff;
@@ -34,35 +39,60 @@ input {
   border-radius: 10px;
   height: 40px;
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 .row2 {
   display: flex;
 }
+.card {
+  width: 30%;
+  margin-top: 50px;
+}
 ul li {
   list-style: none;
-  font-size: 17px;
+  font-size: 20px;
   padding: 12px 8px 12px 50px;
   position: relative;
-  margin-left: -100px;
+  margin-left: -90px;
+  width: 100%;
+  text-wrap: wrap;
 }
 ul li span {
-  display: inline-block;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 5px;
-  right: 0px;
-  width: 40px;
-  height: 40px;
+  right: -50px;
+  width: 30px;
+  height: 30px;
   font-size: 22px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
+
+  color: #fff;
+  border-radius: 20%;
+  background-color: #ff5946;
+  padding: 0;
 }
 ul li span:hover {
-  background-color: #3f4043;
-  color: #fff;
+  background-color: transparent;
+  color: #555;
+  cursor: pointer;
 }
 .checked {
   color: #555;
   text-decoration: line-through;
+}
+li input {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+li input:hover {
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+}
+.inp {
+  margin-left: 5%;
 }
