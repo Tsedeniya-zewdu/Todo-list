@@ -8,11 +8,8 @@ function addTask() {
     let li = document.createElement('li')
 
     let text = inputbox.value
-    text.setAttribute('class', 'text')
     li.innerHTML = text
-z
     container.appendChild(li)
-
     let radio = document.createElement('input')
     radio.type = 'checkbox'
     radio.setAttribute('id', 'rad')
